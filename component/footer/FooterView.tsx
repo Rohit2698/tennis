@@ -29,7 +29,9 @@ const FooterView = () => (
                 </FooterDescriptionText>
                 <div>
                   <FooterContactsDetail>
-                    <LocalPhoneIcon style={{ color: primaryColor, fontSize: 20, marginRight: 10 }} />
+                    <LocalPhoneIcon
+                      style={{ color: primaryColor, fontSize: 20, marginRight: 10 }}
+                    />
                     <a href={`tel:${contactDetails[0].phoneNumber}`}>
                       {contactDetails[0].phoneText}
                     </a>
@@ -39,8 +41,10 @@ const FooterView = () => (
                     <a href={`mailto:${contactDetails[0].mail}`}>{contactDetails[0].mail}</a>
                   </FooterContactsDetail>
                   <FooterContactsDetail>
-                    <LocationOnIcon style={{ color: primaryColor, fontSize: 20, marginRight: 10 }} />
-                    <a target={'_blank'} href={contactDetails[0].locationLink}>
+                    <LocationOnIcon
+                      style={{ color: primaryColor, fontSize: 20, marginRight: 10 }}
+                    />
+                    <a target={'_blank'} href={contactDetails[0].locationLink} rel="noreferrer">
                       {contactDetails[0].locationText}
                     </a>
                   </FooterContactsDetail>

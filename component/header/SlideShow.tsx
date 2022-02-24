@@ -1,4 +1,5 @@
 import React from 'react';
+import { primaryColor } from '../../constant/ColorConstant';
 import {
   DifferentSlideShowContainer,
   HomepageSubText,
@@ -11,7 +12,7 @@ const SlideShow = () => {
     <SlideshowContainer>
       <DifferentSlideShowContainer>
         <HomepageTitle>
-          Best <span style={{ color: '#B8EA3F' }}>Tennis</span> School & Exclusive Club
+          Best <span style={{ color: primaryColor }}>Tennis</span> School & Exclusive Club
         </HomepageTitle>
         <HomepageSubText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

@@ -21,6 +21,7 @@ const ContactUsView = () => (
           <iframe
             src={mapLink}
             width={'100%'}
+            loading="lazy"
             height={'500px'}
             style={{ border: 0, borderRadius: 10 }}
           ></iframe>
@@ -46,7 +47,7 @@ const ContactUsView = () => (
                 </ContactsDetail>
                 <ContactsDetail>
                   <LocationOnIcon style={{ color: primaryColor, fontSize: 20, marginRight: 10 }} />
-                  <a target={'_blank'} href={item.locationLink}>
+                  <a target={'_blank'} href={item.locationLink} rel="noreferrer">
                     {item.locationText}
                   </a>
                 </ContactsDetail>

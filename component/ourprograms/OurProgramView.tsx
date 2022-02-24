@@ -1,4 +1,5 @@
 import { Grid } from '@mui/material';
+import Image from 'next/image';
 import React from 'react';
 import { PrimaryHeading } from '../common/CommonStyle';
 import {
@@ -19,9 +20,13 @@ const OurProgramView = () => (
     </Grid>
     <Grid container alignItems={'stretch'}>
       <Grid item xs={4}>
-        <img
+        <Image
           src={'/images/programe.jpg'}
-          style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+          loading={'lazy'}
+          height={'70%'}
+          width={'100%'}
+          layout={'responsive'}
+          objectFit={'cover'}
           alt={'Tennis academy'}
         />
       </Grid>
@@ -36,9 +41,13 @@ const OurProgramView = () => (
         </OurProgramsInfoCardBackground>
       </OurProgramsInfoCardContainer>
       <Grid item xs={4}>
-        <img
+        <Image
           src={'/images/programe1.jpg'}
-          style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+          loading={'lazy'}
+          height={'70%'}
+          width={'100%'}
+          layout={'responsive'}
+          objectFit={'cover'}
           alt={'Tennis academy'}
         />
       </Grid>
@@ -53,9 +62,13 @@ const OurProgramView = () => (
         </OurProgramsInfoCardBackground>
       </OurProgramsInfoCardContainer>
       <Grid item xs={4}>
-        <img
+        <Image
           src={'/images/programe3.jpg'}
-          style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+          loading={'lazy'}
+          height={'70%'}
+          width={'100%'}
+          layout={'responsive'}
+          objectFit={'cover'}
           alt={'Tennis academy'}
         />
       </Grid>
