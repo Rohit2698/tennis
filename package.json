@@ -1,0 +1,32 @@
+{
+    "name": "gtxtennisacademy",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 4040",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "test-prettier": "prettier --list-different src",
+        "format-prettier": "prettier --write",
+        "format-prettier-all": "prettier --write src"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.8.0",
+        "@emotion/styled": "^11.8.0",
+        "@mui/icons-material": "^5.4.2",
+        "@mui/material": "^5.4.2",
+        "@mui/styles": "^5.4.2",
+        "next": "^12.1.0",
+        "prettier": "^2.5.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-image-gallery": "^1.2.7"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.18",
+        "eslint": "8.9.0",
+        "eslint-config-next": "12.1.0",
+        "typescript": "^4.5.5"
+    }
+}
